@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tina Hane | Commercial Growth & Transformation Executive</title>
-  <meta name="description" content="Senior commercial leader with extensive experience in growth, customer experience, SaaS, and transformation." />
+  <title>Tina Hane | Growth & Customer Experience Executive</title>
+  <meta name="description" content="Tina Hane is a senior commercial leader with experience in growth, customer experience, SaaS, public sector, transformation and operational excellence." />
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700;800&display=swap');
 
     * {
       box-sizing: border-box;
@@ -15,242 +15,496 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      background: #f7f3ee;
-      color: #1f1f1f;
-      line-height: 1.6;
+      background: #000;
+      color: #fff;
+      line-height: 1.7;
     }
 
-    .container {
-      width: min(1100px, 90%);
-      margin: 0 auto;
-    }
-
-    header {
-      padding: 28px 0;
-      display: flex;
-      justify-content: flex-end;
-      gap: 24px;
-      font-size: 14px;
-    }
-
-    header a {
-      color: #1f1f1f;
+    a {
+      color: inherit;
       text-decoration: none;
-      font-weight: 500;
+    }
+
+    .page {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      background: #000;
     }
 
     .hero {
-      min-height: 85vh;
+      min-height: 520px;
+      padding: 95px 8% 55px;
+      background:
+        linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.20)),
+        radial-gradient(circle at 28% 38%, rgba(205,187,93,0.75), transparent 32%),
+        radial-gradient(circle at 72% 32%, rgba(180,125,95,0.58), transparent 28%),
+        radial-gradient(circle at 75% 85%, rgba(65,75,15,0.9), transparent 38%),
+        #2b251e;
       display: flex;
-      align-items: center;
-      padding: 60px 0;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 60px;
-      align-items: center;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .eyebrow {
+      color: #ffbf00;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-size: 13px;
-      font-weight: 600;
-      color: #8a6f56;
-      margin-bottom: 18px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      font-size: clamp(14px, 2vw, 20px);
+      margin-bottom: 48px;
     }
 
     h1 {
       font-family: 'Allura', cursive;
-      font-size: clamp(72px, 12vw, 140px);
       font-weight: 400;
+      font-size: clamp(64px, 9vw, 112px);
       line-height: 0.9;
-      margin-bottom: 24px;
+      margin-bottom: 34px;
+      color: white;
     }
 
-    .hero p {
-      font-size: 20px;
-      color: #3d3d3d;
-      max-width: 620px;
-      margin-bottom: 32px;
-    }
-
-    .hero-card {
-      background: white;
-      padding: 36px;
-      border-radius: 20px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-    }
-
-    .hero-card h3 {
-      font-size: 18px;
-      margin-bottom: 16px;
-    }
-
-    .hero-card ul {
-      list-style: none;
-      display: grid;
-      gap: 12px;
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      align-items: center;
+      color: white;
       font-size: 15px;
-      color: #555;
+      font-weight: 700;
+    }
+
+    .hero-meta span {
+      color: #ffbf00;
+      margin-right: 8px;
+    }
+
+    .nav {
+      margin-top: 70px;
+      width: fit-content;
+      max-width: 100%;
+      padding: 9px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      backdrop-filter: blur(8px);
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+    }
+
+    .nav a {
+      padding: 11px 22px;
+      border-radius: 999px;
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .nav a:first-child {
+      background: white;
+      color: #111;
     }
 
     section {
-      padding: 80px 0;
+      padding: 78px 8%;
     }
 
     h2 {
-      font-size: 34px;
+      color: #ffbf00;
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.05;
+      margin-bottom: 38px;
+      letter-spacing: -0.04em;
+    }
+
+    .summary-text {
+      max-width: 680px;
+      color: #f4f4f4;
+      font-size: 18px;
+      margin-bottom: 52px;
+    }
+
+    .quote {
+      max-width: 740px;
+      border-left: 3px solid #ffbf00;
+      padding-left: 28px;
+      font-size: clamp(25px, 4vw, 44px);
+      line-height: 1.25;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .timeline {
+      border-left: 1px solid rgba(255,255,255,0.18);
+      padding-left: 34px;
+      display: grid;
+      gap: 78px;
+    }
+
+    .role {
+      position: relative;
+    }
+
+    .role::before {
+      content: "";
+      position: absolute;
+      left: -40px;
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      background: #ffbf00;
+      border-radius: 50%;
+    }
+
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .role h3 {
+      color: #ffbf00;
+      text-transform: uppercase;
+      font-size: clamp(20px, 3vw, 28px);
+      line-height: 1.12;
+      max-width: 620px;
+    }
+
+    .date {
+      color: #ffbf00;
+      font-weight: 800;
+      white-space: nowrap;
+      padding-top: 4px;
+    }
+
+    .company {
+      color: #fff;
+      margin-bottom: 34px;
+      font-size: 16px;
+    }
+
+    .role p {
+      max-width: 720px;
+      color: #f2f2f2;
+      font-size: 17px;
+      margin-bottom: 36px;
+    }
+
+    .impact-title {
+      color: #ffbf00;
+      font-weight: 800;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    ul {
+      list-style: none;
+      max-width: 800px;
+    }
+
+    li {
+      color: #f3f3f3;
+      margin-bottom: 17px;
+      font-size: 16px;
+      position: relative;
+      padding-left: 22px;
+    }
+
+    li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #ffbf00;
+      font-weight: 800;
+    }
+
+    .competencies-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px 80px;
+      max-width: 900px;
+    }
+
+    .competency {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 800;
+      font-size: 17px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: #ffbf00;
+      border-radius: 50%;
+      flex: 0 0 10px;
+    }
+
+    .languages {
+      margin-top: 78px;
+    }
+
+    .languages h3 {
+      color: #ffbf00;
+      text-transform: uppercase;
+      font-size: 24px;
       margin-bottom: 24px;
     }
 
-    .summary {
-      max-width: 850px;
-      font-size: 18px;
-      color: #444;
-    }
-
-    .experience-grid {
-      display: grid;
-      gap: 28px;
-      margin-top: 32px;
-    }
-
-    .experience-card {
-      background: white;
-      padding: 28px;
-      border-radius: 18px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
-    }
-
-    .experience-card h3 {
-      font-size: 20px;
-      margin-bottom: 6px;
-    }
-
-    .experience-card .meta {
-      font-size: 14px;
-      color: #8a6f56;
+    .languages p {
+      font-weight: 800;
       margin-bottom: 14px;
-      font-weight: 600;
-    }
-
-    .experience-card p {
-      color: #555;
     }
 
     footer {
-      padding: 60px 0;
-      text-align: center;
+      padding: 70px 8%;
+      color: #aaa;
       font-size: 14px;
-      color: #777;
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
 
-    @media (max-width: 900px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
+    footer a {
+      color: #ffbf00;
+      font-weight: 700;
+    }
 
-      h1 {
-        font-size: 72px;
-      }
-
+    @media (max-width: 760px) {
       .hero {
-        min-height: auto;
-        padding: 40px 0;
+        padding: 70px 7% 42px;
+        min-height: 560px;
+      }
+
+      .hero-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .nav {
+        margin-top: 48px;
+        width: 100%;
+      }
+
+      .nav a {
+        padding: 10px 14px;
+        font-size: 12px;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+
+      .role-header {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .date {
+        padding-top: 0;
+      }
+
+      .timeline {
+        padding-left: 26px;
+      }
+
+      .role::before {
+        left: -32px;
+      }
+
+      .competencies-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .quote {
+        font-size: 27px;
       }
     }
   </style>
 </head>
+
 <body>
+  <main class="page">
 
-  <div class="container">
+    <section class="hero" id="home">
+      <div class="eyebrow">Growth & Customer Experience Executive</div>
+      <h1>Tina Hane</h1>
 
-    <header>
-      <a href="https://linkedin.com/in/tinahane" target="_blank">LinkedIn</a>
-      <a href="mailto:tinamhane@gmail.com">Contact</a>
-    </header>
-
-    <section class="hero">
-      <div class="hero-grid">
-        <div>
-          <div class="eyebrow">Commercial Growth & Transformation Executive</div>
-          <h1>Tina Hane</h1>
-          <p>
-            Senior commercial leader with extensive experience driving growth, customer-centric transformation,
-            and operational excellence across B2B, SaaS, and public-sector organizations.
-          </p>
-        </div>
-
-        <div class="hero-card">
-          <h3>Core Expertise</h3>
-          <ul>
-            <li>Commercial Strategy & Revenue Growth</li>
-            <li>Customer Experience Transformation</li>
-            <li>Operational Excellence</li>
-            <li>Cross-Functional Leadership</li>
-            <li>Change Management</li>
-            <li>Public Sector & SaaS</li>
-          </ul>
-        </div>
+      <div class="hero-meta">
+        <a href="https://linkedin.com/in/tinahane" target="_blank"><span>in</span> linkedin.com/in/tinahane</a>
+        <div><span>⌖</span> Stockholm, Sweden</div>
       </div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#summary">Summary</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#links">Links</a>
+      </nav>
     </section>
 
-    <section>
+    <section id="summary">
       <h2>Summary</h2>
-      <p class="summary">
-        Proven track record of leading cross-functional teams, scaling revenue, and transforming
-        customer-facing operations to deliver measurable business results. Driven by curiosity and
-        continuous improvement, I challenge established ways of working and build high-performing
-        organizations that create sustainable impact.
+
+      <p class="summary-text">
+        Executive leader with extensive experience driving commercial growth,
+        customer-centric transformation, and operational excellence across B2B,
+        SaaS, and public-sector organizations. Proven track record of leading
+        cross-functional teams, scaling revenue, and transforming customer-facing
+        operations to deliver sustainable business impact.
       </p>
+
+      <div class="quote">
+        Driven by curiosity and continuous improvement, I challenge established
+        ways of working and build high-performing organizations that deliver
+        measurable results.
+      </div>
     </section>
 
-    <section>
-      <h2>Selected Experience</h2>
+    <section id="experience">
+      <h2>Work Experience</h2>
 
-      <div class="experience-grid">
+      <div class="timeline">
 
-        <div class="experience-card">
-          <h3>Chief Sales Officer (CSO)</h3>
-          <div class="meta">Skola24 • 2022–2025</div>
+        <article class="role">
+          <div class="role-header">
+            <h3>Chief Sales Officer (CSO)</h3>
+            <div class="date">2022 – 2025</div>
+          </div>
+          <div class="company">Skola24</div>
+
           <p>
-            Led the overall commercial organization with responsibility for sales, bid management,
-            and customer-facing commercial operations. Drove enterprise-wide customer experience
-            transformation and delivered revenue growth above budget for two consecutive years.
+            Led the overall commercial organization with responsibility for sales,
+            bid management, and customer-facing commercial operations in a public-sector
+            SaaS environment. Drove cross-functional customer experience transformation
+            initiatives and delivered revenue growth above budget for two consecutive years,
+            while serving as part of the extended management team.
           </p>
-        </div>
 
-        <div class="experience-card">
-          <h3>Head of Education & Sales</h3>
-          <div class="meta">SRF Konsulterna • 2021–2022</div>
-          <p>
-            Led sales and education business development, modernizing commercial offerings and
-            improving digital/hybrid delivery models to strengthen growth and customer value.
-          </p>
-        </div>
+          <div class="impact-title">Selected Impacts / Key Initiatives</div>
+          <ul>
+            <li>Delivered revenue growth above budget for two consecutive years, achieving +11% in 2023 and +13% in 2024</li>
+            <li>Led enterprise-wide customer experience and CX/CXM transformation initiatives across commercial operations</li>
+            <li>Oversaw sales, bid management, and customer-facing commercial functions in a public-sector SaaS environment</li>
+            <li>Strengthened alignment and collaboration across Sales, Customer Success, Support, and Product teams</li>
+            <li>Developed scalable commercial governance, processes, and operating structures to support sustainable growth</li>
+            <li>Served as part of the extended management team, contributing to strategic business and organizational development</li>
+          </ul>
+        </article>
 
-        <div class="experience-card">
-          <h3>VP Customer Success</h3>
-          <div class="meta">Loop54 • 2018–2021</div>
+        <article class="role">
+          <div class="role-header">
+            <h3>Head of Education & Sales</h3>
+            <div class="date">2021 – 2022</div>
+          </div>
+          <div class="company">SRF Konsulterna AB</div>
+
           <p>
-            Built and led the Customer Success organization, driving retention, expansion,
-            and strategic customer development in an international SaaS environment.
+            Led the Education & Sales function with responsibility for commercial
+            performance and strategic development. Drove the growth of digital and hybrid
+            learning offerings, increasing sales and scalability while strengthening the
+            customer value proposition and serving as part of the management team.
           </p>
-        </div>
+
+          <div class="impact-title">Selected Impacts / Key Initiatives</div>
+          <ul>
+            <li>Expanded digital and hybrid education offerings to drive revenue growth and scalability</li>
+            <li>Led strategic development of the education portfolio and commercial go-to-market initiatives</li>
+            <li>Strengthened the customer value proposition through modernization of delivery formats</li>
+            <li>Managed commercial performance and sales development across the function</li>
+            <li>Contributed to strategic business development as part of the management team</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role-header">
+            <h3>VP Customer Success</h3>
+            <div class="date">2018 – 2021</div>
+          </div>
+          <div class="company">Loop54</div>
+
+          <p>
+            Led the Customer Success organization with responsibility for customer retention,
+            expansion, and strategic account development in a SaaS environment. Built and
+            developed the Customer Success function while driving customer value realization,
+            cross-functional collaboration, and long-term commercial growth.
+          </p>
+
+          <div class="impact-title">Selected Impacts / Key Initiatives</div>
+          <ul>
+            <li>Built and scaled the Customer Success function to support growth and retention objectives</li>
+            <li>Drove customer retention, upsell, and strategic account development across key clients</li>
+            <li>Strengthened customer value realization through proactive success frameworks and governance</li>
+            <li>Collaborated cross-functionally with Product and Commercial teams to improve customer outcomes</li>
+            <li>Led and developed Customer Success Managers and product developers within the organization</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role-header">
+            <h3>Commercial & Customer Operations Leadership Roles</h3>
+            <div class="date">2009 – 2017</div>
+          </div>
+          <div class="company">eBay / PayPal / Tradera</div>
+
+          <p>
+            Held multiple senior leadership roles across commercial sales, customer service,
+            and operational excellence within eBay, PayPal, and Tradera. Led business sales,
+            customer operations, and strategic transformation initiatives, driving profitability,
+            productivity improvements, and customer satisfaction in a fast-paced international environment.
+          </p>
+
+          <div class="impact-title">Selected Impacts / Key Initiatives</div>
+          <ul>
+            <li>Turned an unprofitable B2B sales strategy into profitable growth, achieving 33% YoY growth in 2016/2017</li>
+            <li>Led customer service and operational excellence initiatives improving productivity and customer satisfaction</li>
+            <li>Reduced contact frequency and operational costs through process and service optimization</li>
+            <li>Managed outsourcing partner transition and operational transformation initiatives</li>
+            <li>Served as HR liaison for Sweden leadership and European HR stakeholders</li>
+            <li>Received eBay Award for Operational Excellence in Barcelona, 2011</li>
+          </ul>
+        </article>
 
       </div>
     </section>
 
-    <footer>
-      © 2026 Tina Hane · Stockholm, Sweden
+    <section id="skills">
+      <h2>Core Competencies</h2>
+
+      <div class="competencies-grid">
+        <div class="competency"><span class="dot"></span> Commercial Strategy</div>
+        <div class="competency"><span class="dot"></span> Organizational Development</div>
+        <div class="competency"><span class="dot"></span> Revenue Growth</div>
+        <div class="competency"><span class="dot"></span> Operational Excellence</div>
+        <div class="competency"><span class="dot"></span> Customer Experience Transformation</div>
+        <div class="competency"><span class="dot"></span> Change Management</div>
+        <div class="competency"><span class="dot"></span> Customer Success Leadership</div>
+        <div class="competency"><span class="dot"></span> Cross-Functional Leadership</div>
+      </div>
+
+      <div class="languages">
+        <h3>Languages</h3>
+        <p>Swedish (Native)</p>
+        <p>English (Professional Proficiency)</p>
+        <p>Spanish (Conversational)</p>
+      </div>
+    </section>
+
+    <footer id="links">
+      © 2026 Tina Hane · Stockholm, Sweden ·
+      <a href="https://linkedin.com/in/tinahane" target="_blank">LinkedIn</a>
     </footer>
 
-  </div>
-
+  </main>
 </body>
 </html>
